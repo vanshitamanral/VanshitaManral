@@ -247,7 +247,11 @@ section.skill .container img:hover{
         display: flex;
         flex-direction: column;
     }
-    
+    header .container nav .left .navbar {
+        display: flex;
+        flex-direction: column;
+        margin-left:4rem;
+    }
     header .container nav .right {
         margin-top: 1rem;
     }
@@ -286,12 +290,96 @@ section.skill .container img:hover{
     margin-top: 7rem;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 2rem;
-    grid-row-gap: 4rem;
+    grid-row-gap: 4rem;}
+
 
 
 }
 
+@media (max-width:500px) and (min-width:300px)
+{
+   
+    header{
+        height: 1000px;
+    }
+    header .container nav{
+        flex-direction: column;
+        
+    }
+    header .container nav .left .navbar {
+        display: flex;
+        flex-direction: column;
+        margin-left:4rem;
+    }
+
+    header .container nav .left{
+        text-align: center;
+        
+    }
     
+    header .container nav .right {
+        margin-top: 1rem;
+    }
+    header .intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+    header .intro .left h1{
+        font-size: 30px;
+    }
+    header .intro .left p{
+        font-size: 20px;
+    }
+    header .intro .right img{
+        
+        margin-top: 2rem;
+        height: 285px;
+    }
+    
+    section.about .container{
+        flex-direction: column;
+    }
+
+    section.about .container .abouttext{
+        text-align: center;
+    }
+    section.about .container .abouttext .social{
+        align-items: center;
+        justify-content: center;
+    }
+
+    section.project{
+        height: 950px;
+    }
+
+    section.project .card-wrapper{
+        display: grid;
+        margin-top: 7rem;
+        grid-template-columns: 1fr;
+        grid-column-gap: 5rem;
+        grid-row-gap: 5rem;
+    }
+
+    section.project .card-wrapper .card:hover{
+        transform: scale(0.8);
+        transition: 0.3s ease;
+    }
+
+    .bg-modal{
+        width: 70%;
+        height: 70%;
+        background-color: rgba(0,0,0,0.7);
+        position: absolute;
+        top:0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
 }
 
 .close{
