@@ -1,0 +1,71 @@
+:root
+{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:#F2F2F2;
+}
+.flex{
+    display: flex;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.justify-between
+{
+    justify-content: space-between;
+}
+
+.justify-even
+{
+    justify-content: space-evenly;
+}
+
+.btn{
+    padding: 0.8rem 3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn-primary
+{
+    background-color: var(--primary);
+    color: var(--dark);
+}
+
+.btn-primary:hover
+{
+    background-color: transparent;
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-secondary{
+    margin-top:2rem;
+    background-color: transparent;
+}
+
+.btn-secondary:hover{
+    background-color: var(--primary);
+    color: var(--dark);
+    
+}
+
+.left{
+    margin-right:2rem ;
+}
+
+.right
+{
+    margin-left: 2rem;
+}
+
+.flex-1{
+    flex:1;
+}
